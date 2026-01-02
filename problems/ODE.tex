@@ -1,0 +1,50 @@
+PROBLEM 1 : Free fall with air resistance
+        1. Physical Context
+
+In reality, objects falling through air experience drag. This is relevant in:
+
+Atmospheric physics
+
+Planetary science
+
+Space probe entry dynamics
+
+        2. Governing Equation
+
+Newton’s second law:
+
+$$
+m \frac{dv}{dt} = mg - kv
+$$
+
+Divide by m:
+$$
+\frac{dv}{dt} = g - kv
+$$
+        3. Analytical Solution (and its limits)
+
+This equation can be solved analytically, but:
+
+i. Analytical solutions are not always available for more complex drag
+
+ii. Numerical methods generalize easily to harder cases
+
+This allows you to compare numerical vs analytical results.
+
+        4. Numerical Formulation
+
+You convert the equation into the standard ODE form:
+
+$$
+\frac{dv}{dt} = f(t,v)
+$$
+
+Then apply:
+
+i. Euler’s method
+
+ii. RK4
+
+Same initial condition, same step size.
+
+What you learn: how step size affects stability and error.

@@ -12,8 +12,7 @@ def runge_kutta(f, x0, y0, h, N):
     x = x0
     y = y0  
     res = [(x, y)]
-    print(f"{'n':<5}{'x_n':<12}{'y_n':<12}{'k_1':<12}{'k_2':<12}{'k_3':<12}{'k_4':<12}{'k':<12}")
-    print('-' * 73)
+    
     n = 0
     while(n < N):
         k_1 = h * f(x, y)
@@ -23,7 +22,7 @@ def runge_kutta(f, x0, y0, h, N):
         k = (k_1 + 2 * k_2 + 2 * k_3 + k_4) / 6
         y_next = y + k
         
-        print(f"{n:<5}{x:<12.6f}{y:<12.6f}{k_1:<12.6f}{k_2:<12.6f}{k_3:<12.6f}{k_4:<12.6f}{k:<12.6f}")
+        
         
         x = x + h
         y = y_next
