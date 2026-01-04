@@ -25,7 +25,7 @@ def bisection(f, low, high, tol = 1e-5):
         fc = f(c)
         iterations.append(n)
         c_values.append(c)
-        errors.append(abs(fc))
+        errors.append((b - a)/2)
         
 
         if(abs(fc) < tol or (abs(b - a) / 2) < tol):
